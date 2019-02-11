@@ -44,5 +44,52 @@ a
 	&:hover, &:focus
 		color: $accent
 
+.top-line
+	background-color: $dark
+	position: relative
+	height: 65px
+
+.logo
+	font-family: baron-g, sans-serif
+	color: #ffffff
+	font-size: 23px
+	display: inline-block
+	text-decoration: none
+	position: absolute
+	padding-left: 30px
+	left: 0
+	line-height: 65px
+	&:hover, &:focus
+		text-decoration: none
+		color: #ffffff
+	span
+		color: $accent
+
+.main-menu
+	padding: 0 100px
+	width: 100%
+	text-align: center
+	ul, li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+		margin-right: -4px
+		&.active
+			a
+				color: #ffffff
+				background-color: lighten($dark, 5)
+
+	a
+		color: #d1d9e0
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: bold
+		padding: 0 15px
+		line-height: 65px
+		display: block
+		transition: color .25s ease, background-color .25s ease
 
 @import "media" // Always at the end
