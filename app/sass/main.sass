@@ -201,6 +201,9 @@ section
 			font-style: 19px
 		a
 			color: #ffffff
+			text-decoration: none
+			&:hover
+				text-decoration: underline
 
 .pattern
 	background-color: $dark
@@ -224,6 +227,9 @@ section
 			right: 10px
 			bottom: 10px
 			left: 10px
+		.overlay
+			&::before
+				opacity: 0.75
 
 .overlay
 	background-size: cover
@@ -266,6 +272,32 @@ section
 			margin-right: 10px
 			position: absolute
 			opacity: .25
+
+.likely-custom
+	display: inline-block
+	font-size: 12px
+	.likely__button
+		padding-left: 15px
+	>div
+		padding: 0 4px 0 3px
+		position: relative
+		cursor: pointer
+		margin: 6px 2px 0
+		border: 1px solid #fff
+		border-radius: 2px
+	.likely__counter
+		display: none
+	svg
+		width: 11px
+		height: auto
+		position: absolute
+		top: 3.5px
+		left: 4px
+		path
+			fill: #ffffff
+	>*
+		display: inline-block
+
 
 
 @import "media" // Always at the end
