@@ -1,2 +1,2 @@
 # WebDesignMaster
-WebDesign Master
+WebDesignMaster
